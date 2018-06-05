@@ -1,0 +1,627 @@
+<!doctype html>
+<html>
+<head>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine7/style.css" />
+<script type="text/javascript" src="engine7/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine8/style.css" />
+<script type="text/javascript" src="engine8/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<meta charset="utf-8">
+<title>Datos del alumno</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temapr.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupoJavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!-- <script src="js/acciones.js"></scrpit -->
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/bases2.png','imagenes/visorr/bas2.jpg','imagenes/visorr/dis.png','imagenes/visorr/basess.jpg','imagenes/visorr/mod.jpg','imagenes/visorr/sql1.png','imagenes/hj.png','imagenes/Fn2.png','imagenes/sust.png')">
+
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>PROYECTO FINAL</h1>
+   <h1>BD Simples y Avanzadas</h1>
+   </div>
+   <div>
+   </div>
+   <div>
+   <h2><center>BASES DE DATOS SIMPLES</center></h2>
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Bases de Datos:</h1>
+   <div>
+   <br>
+   </div>
+   <div>
+    <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','imagenes/bases2.png',1)"><img src="imagenes/bases.png" width="60%" height="60%" id="Image37"></a></center></div>
+   </div>
+   </div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>¿Qué son las bases de datos?</h2>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Diseño de bases de datos</h2>
+   </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Microsoft Access</h2>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Como crear una Base de Datos:</h2>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Como crear una tabla</h2>
+    </a>
+    </li>
+    <H2><center>BASES DE DATOS AVANZADAS</center></H2>
+   <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Avanzadas</h1>
+  <div>
+  <br>
+  </div>
+  <div>
+    <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','imagenes/visorr/bas2.jpg',1)"><img src="imagenes/visorr/bas.jpg" width="60%" height="60%" id="Image35"></a></center></div>
+   </div>
+   </div>
+    <li class="ui-first-child ui-last-child">
+   <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>SQL</h2>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Normalizacion de las bases de datos</h2>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Relaciones</h2>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Consultas</h2>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Claúsulas SQL</h2>
+    </a>
+    </li>
+    <br>
+    <br>
+     <div data-role="main" class="ui-content" align="center">
+  <div style="width:80%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child">
+   <a href="https://support.office.com/es-es/article/conceptos-b%C3%A1sicos-del-dise%C3%B1o-de-una-base-de-datos-eb2159cf-1e30-401a-8084-bd4f9c9ca1f5" target="_self" data-role="button"/>
+  <h2>B.D. SIMPLES</h2>
+  </a>
+  </li>
+  <p>
+  <li class="ui-first-child">
+  <a href="https://www.ecured.cu/Bases_de_datos" target="_self" data-role="button"/>
+  <h2>B.D AVANZADAS</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+    <a href="#Pagina11" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>DATOS</h2>
+    </a>
+    </li>
+   </ul>
+  </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+    <h4>Aplicación 10</h4>
+    <h4>Maria Ignacia Postrero Santos</h4>
+    </div>
+    </div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Base de Datos</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','imagenes/visorr/dis.png',1)"><img src="imagenes/visorr/basededatos.png" width="60%" height="60%" id="Image34"></a>
+<p>
+  Una base de datos es un “almacén” que nos permite guardar grandes cantidades de información de forma organizada para que luego podamos encontrar y utilizar fácilmente.
+  Una base de datos se puede definir como un conjunto de información relacionada que se encuentra agrupada o estructurada.
+  Desde el punto de vista informático, la base de datos es un sistema formado por un conjunto de datos almacenados en discos que permiten el acceso directo a ellos y un conjunto de programas que manipulen ese conjunto de datos.
+  Cada base de datos se compone de una o más tablas que guarda un conjunto de datos. Cada tabla tiene una o más columnas y filas. Las columnas guardan una parte de la información sobre cada elemento que queramos guardar en la tabla, cada fila de la tabla conforma un registro.
+</p>
+    <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Visor:</h1>
+  <div>
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container7" align="center">
+<div class="ws_images"><ul>
+		<li><img src="data7/images/access.jpg" alt="Access" title="Access" id="wows7_0"/></li>
+		<li><img src="data7/images/bas.jpg" alt="bas" title="bas" id="wows7_1"/></li>
+		<li><img src="data7/images/bas2.jpg" alt="bas2" title="bas2" id="wows7_2"/></li>
+		<li><img src="data7/images/basededatos.png" alt="basededatos" title="basededatos" id="wows7_3"/></li>
+		<li><img src="data7/images/basesss.jpg" alt="basesss" title="basesss" id="wows7_4"/></li>
+		<li><img src="data7/images/dis.png" alt="dis" title="dis" id="wows7_5"/></li>
+		<li><img src="data7/images/dis4.jpg" alt="dis4" title="dis4" id="wows7_6"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data7/images/mode.png" alt="bootstrap carousel" title="mode" id="wows7_7"/></a></li>
+		<li><img src="data7/images/sql.png" alt="sql" title="sql" id="wows7_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Access"><span><img src="data7/tooltips/access.jpg" alt="Access"/>1</span></a>
+		<a href="#" title="bas"><span><img src="data7/tooltips/bas.jpg" alt="bas"/>2</span></a>
+		<a href="#" title="bas2"><span><img src="data7/tooltips/bas2.jpg" alt="bas2"/>3</span></a>
+		<a href="#" title="basededatos"><span><img src="data7/tooltips/basededatos.png" alt="basededatos"/>4</span></a>
+		<a href="#" title="basesss"><span><img src="data7/tooltips/basesss.jpg" alt="basesss"/>5</span></a>
+		<a href="#" title="dis"><span><img src="data7/tooltips/dis.png" alt="dis"/>6</span></a>
+		<a href="#" title="dis4"><span><img src="data7/tooltips/dis4.jpg" alt="dis4"/>7</span></a>
+		<a href="#" title="mode"><span><img src="data7/tooltips/mode.png" alt="mode"/>8</span></a>
+		<a href="#" title="sql"><span><img src="data7/tooltips/sql.png" alt="sql"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine7/wowslider.js"></script>
+<script type="text/javascript" src="engine7/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  <p> </p>
+  <br>
+  </div>
+  <div>
+    </div>
+   </div>
+   </div>
+    </div>
+    </div>
+    <div>
+   </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Diez, MIPS</h4>
+    </div>
+</div>
+     
+     
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Diseño de bases de datos</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image38','','imagenes/visorr/mod.jpg',1)"><img src="imagenes/visorr/mode.png" width="60%" height="60%" id="Image38"></a>
+<h1>Modelo entidad-relacion ER</h1>
+    <p>
+El modelo entidad-relación ER es un modelo de datos que permite representar cualquier abstracción, percepción y conocimiento en un sistema de información formado por un conjunto de objetos denominados entidades y relaciones, incorporando una representación visual conocida como diagrama entidad-relación.
+    </p>
+    <h1>Conceptos del modelo ER</h1>
+    <li>Entidad </li>
+    <p>La entidad es cualquier clase de objeto o conjunto de elementos presentes o no, en un contexto determinado dado por el sistema de información o las funciones y procesos que se definen en un plan de automatización.</p>
+    <li>Atributos </li>
+    <p>Son las características, rasgos y propiedades de una entidad, que toman como valor una instancia particular.</p>
+    <li>Clave</li>
+    <p>. Es el campo o atributo de una entidad o tabla que tiene como objetivo distinguir cada registro del conjunto, sirviendo sus valores como datos vinculantes de una relación entre registros de varias tablas.</p>
+     <li>Integridad referencial</li>
+    <p> Se denomina integridad referencial al tipo de interrelación que se produce entre tablas mediante un campo clave que deberá contener la cadena alfanumérica exacta al identificador de la tabla auxiliar para poder realizar la relación entre los registros.</p>
+    
+    <div data-role="main" class="ui-content" align="center">
+  <div style="width:80%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child">
+   <a href="https://support.microsoft.com/es-mx/help/283878/description-of-the-database-normalization-basics" target="_self" data-role="button"/>
+  <h2>Normalización de Bases de Datos </h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+   </div>
+    </div>
+    <div>
+   </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Diez, MIPS</h4>
+    </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Microsoft Access</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','imagenes/visorr/basess.jpg',1)"><img src="imagenes/visorr/Access.jpg" width="60%" height="60%" id="Image36"></a>
+<p>
+  Es una herramienta fácil de usar que permite crear rápidamente aplicaciones de base de datos basadas en el explorador que te ayudarán a dirigir tu negocio. Los datos de Access se almacenan automáticamente en una base de datos en la nube, por lo que están más protegidos. Además, puedes compartir fácilmente las aplicaciones de Access con compañeros de trabajo.
+</p>
+    </div>
+    </div>
+    <div>
+   </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Diez, MIPS</h4>
+    </div>
+</div>
+     
+     
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>¿Como crear una Base de Datos?</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+    <h1>Una manera de crear una base de datos en Access es:</h1>
+    <li>Paso 1:</li>
+    <p>	Pulsar la opción Base de datos en blanco que se encuentra dentro de la opción Nuevo de la ficha Archivo.
+    </p>
+     <img src="imagenes/crear.png" width="50%" height="50%">
+    <li>Paso 2:</li>
+    <p>	Es importante hacer notar que al momento de pulsar el botón Base de datos en blanco se debe crear un archivo con el nombre y ruta especificados en el panel derecho.</p>
+     <img src="imagenes/crear2.png" width="50%" height="50%">
+    <p>Una vez creada la base de datos podrás encontrar el archivo .accdb en la ruta especificada.</p>
+   
+    </div>
+    </div>
+    <div>
+   </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Diez, MIPS</h4>
+    </div>
+</div>
+     
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>¿Como crear una tabla?</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+<h1>Una manera de crear tablas en Access es:</h1>
+<li>Paso 1:</li>
+    <p>
+   Haga clic en Archivo > Abrir. Si usa Access 2007, haga clic en el botón Microsoft Office > Abrir.</p>
+   
+        <li>Paso 2:</li>
+    <p>
+En el cuadro de diálogo Abrir, seleccione la base de datos que desea abrir y luego haga clic en Abrir.</p>
+    <img src="imagenes/crearta.png" width="50%" height="50%">
+    <li>Paso 3:</li>
+    
+<p>
+En la pestaña Crear, en el grupo Tablas, haga clic en Tabla.
+    </p>
+    <img src="imagenes/crear3.png" width="50%" height="50%">
+    <li>Paso 4:</li>
+    <p> Se inserta una tabla nueva en la base de datos y se abre la tabla en la vista Hoja de datos.</p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image40','','imagenes/hj.png',1)"><img src="imagenes/crearta2.png" width="60%" height="60%" id="Image40"></a>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Ejemplo:</h1>
+  <div>
+  
+  <br>
+  </div>
+  <div>
+     <img src="imagenes/eje.png" width="50%" height="50%"> </div>
+   </div>
+ </div>
+    
+    </div>
+    </div>
+    <div>
+   </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Diez, MIPS</h4>
+    </div>
+</div>
+     
+     
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>SQL</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image39','','imagenes/visorr/sql1.png',1)"><img src="imagenes/visorr/sql.png" width="60%" height="60%" id="Image39"></a>
+<p>
+  SQL es un lenguaje de computación para trabajar con conjuntos de datos y las relaciones entre ellos. Los programas de bases de datos relacionales, como Microsoft Office Access, usan SQL para trabajar con datos. A diferencia de muchos lenguajes de computación, SQL no es difícil de leer y entender, incluso para un usuario inexperto. Al igual que muchos lenguajes de computación, SQL es un estándar internacional reconocido por organismos de estándares como ISO y ANSI.
+    </p>
+    <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Visor:</h1>
+  <div>
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container8" align="center">
+<div class="ws_images"><ul>
+		<li><img src="data8/images/bases.png" alt="bases" title="bases" id="wows8_0"/></li>
+		<li><img src="data8/images/bases2.png" alt="bases2" title="bases2" id="wows8_1"/></li>
+		<li><img src="data8/images/crear.png" alt="crear" title="crear" id="wows8_2"/></li>
+		<li><img src="data8/images/fn.png" alt="Fn" title="Fn" id="wows8_3"/></li>
+		<li><img src="data8/images/images.jpg" alt="images" title="images" id="wows8_4"/></li>
+		<li><a href="http://wowslider.net"><img src="data8/images/sql.jpg" alt="jquery carousel" title="sql" id="wows8_5"/></a></li>
+		<li><img src="data8/images/fn2.png" alt="Fn2" title="Fn2" id="wows8_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="bases"><span><img src="data8/tooltips/bases.png" alt="bases"/>1</span></a>
+		<a href="#" title="bases2"><span><img src="data8/tooltips/bases2.png" alt="bases2"/>2</span></a>
+		<a href="#" title="crear"><span><img src="data8/tooltips/crear.png" alt="crear"/>3</span></a>
+		<a href="#" title="Fn"><span><img src="data8/tooltips/fn.png" alt="Fn"/>4</span></a>
+		<a href="#" title="images"><span><img src="data8/tooltips/images.jpg" alt="images"/>5</span></a>
+		<a href="#" title="sql"><span><img src="data8/tooltips/sql.jpg" alt="sql"/>6</span></a>
+		<a href="#" title="Fn2"><span><img src="data8/tooltips/fn2.png" alt="Fn2"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine8/wowslider.js"></script>
+<script type="text/javascript" src="engine8/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  <br>
+  </div>
+  <div>
+    
+     </div>
+   </div>
+   </div>
+     
+    </div>
+    </div>
+    <div>
+   </div>
+   <div data-role="main" class="ui-content" align="center">
+  <div style="width:80%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child">
+   <a href="https://support.office.com/es-es/article/access-sql-conceptos-b%C3%A1sicos-vocabulario-y-sintaxis-444d0303-cde1-424e-9a74-e8dc3e460671" target="_self" data-role="button"/>
+  <h2>Más información</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Diez, MIPS</h4>
+    </div>
+</div>
+     
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Normalización de bases de datos</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+   </div>
+    </div>
+    <h1>¿Qué es?</h1>
+    <p>
+     La normalización es el proceso de organizar los datos de una base de datos. Se incluye la creación de tablas y el establecimiento de relaciones entre ellas según reglas diseñadas tanto para proteger los datos como para hacer que la base de datos sea más flexible al eliminar la redundancia y las dependencias incoherentes.
+    </p>
+    <h1>Formas Normales</h1>
+    <li>1era Forma Normal</li>
+    <p>Una tabla se encuentra en primera forma normal si impide que un atributo de una celda pueda tomar más de un valor</p>
+    <li>2da Forma Normal</li>
+    <p>Si una tabla esta en primera forma normal y ademas cada atributo depende de la clave primaria</p>
+    <li>3era Forma Normal</li>
+    <p>Cuando una tabla esta en 2da forma normal y ademas los atributos no dependen funcionalmente de atributos que no son clave.</p> 
+    <div data-role="main" class="ui-content" align="center">
+  <div style="width:80%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child">
+   <a href="https://support.microsoft.com/es-mx/help/283878/description-of-the-database-normalization-basics" target="_self" data-role="button"/>
+  <h2>Más formas normales</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+    <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image41','','imagenes/Fn2.png',1)"><img src="imagenes/Fn.png" width="60%" height="60%" id="Image41"></a></center>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Diez, MIPS</h4>
+    </div>
+</div>
+    </div>
+    
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Relaciones</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+    <h1>¿Qué son?</h1>
+    <p>Las relaciones de bases de datos son asociaciones entre tablas que se crean utilizando sentencias de unión para recuperar datos.
+Existen relaciones de diferentes tipos. El tipo de relación que utiliza Access al unir dos tablas dependerá de cómo estén definidos los campos relacionados.
+.</p>
+<h1>Tipos de relaciones</h1>
+<li>Relación 1 a 1</li>
+<p>Se creará una relación de este tipo si ambos campos relacionados son claves principales. En este tipo de relación, un registro de la tabla uno sólo puede estar relacionado con un único registro de la tabla dos y viceversa.
+</p>
+<img src="imagenes/sus1.jpg" width="50%" height="50%">
+<li>Relación de uno a varios</li>
+<p>Se crea una relación de uno a varios si uno de los campos relacionados es una clave principal. Esta relación es la más común. Cada registro de una tabla puede estar enlazado con varios registros de una segunda tabla, pero cada registro de la segunda sólo puede estar enlazado con un único registro de la primera.</p>
+<img src="imagenes/sust3.jpg" width="50%" height="50%">
+<li>Relación de varios a varios </li>
+<p>En este caso, ninguno de los campos relacionados son claves principales. Cada registro de la primera tabla puede estar enlazado con varios registros de la segunda y viceversa. Este tipo de relación implica la repetición de los campos de cada tabla; esto es lo que Access pretende evitar. Para establecer relaciones de este tipo, es necesario crear una tabla intermedia que esté relacionada con las dos de uno a varios.</p>
+<img src="imagenes/sus4.png" width="50%" height="50%">
+<br>
+<p></p>
+<p></p>
+<center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image42','','imagenes/sust.png',1)"><img src="imagenes/sust2.png" width="60%" height="60%" id="Image42"></a></center> </div>
+    <div>
+    </div>
+  </div>
+  
+ 
+  
+ 
+ 
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Diez, MIPS</h4>
+    </div>
+</div>
+    
+    
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Consultas</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div> 
+    </div>
+    </div>
+
+    
+    <h2>¿Qué es una consulta?</h2>
+    <center><img src="imagenes/consu.jpg" width="50%" height="50%"></center>
+    <p>
+ Las consultas son una forma de buscar y recopilar información de una o más tablas  para conseguir información detallada de una base de datos. Al crear una consulta en Access 2010, defines condiciones específicas de búsqueda para encontrar, exactamente, la información que deseas.
+    </p>
+    
+    <div data-role="main" class="ui-content" align="center">
+  <div style="width:80%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child">
+   <a href="https://www.gcfaprendelibre.org/tecnologia/curso/access_2010/disenar_busquedas_o_consultas/2.do" target="_self" data-role="button"/>
+  <h2>Más información</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  
+    
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Diez, MIPS</h4>
+    </div>
+</div>
+    
+    
+<div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>¿Qué es una claúsula?</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+ <img src="imagenes/sql.jpg" width="50%" height="50%">
+    <p>
+   Como una frase, una instrucción SQL tiene cláusulas. Cada cláusula realiza una función de la instrucción SQL. Algunas cláusulas son necesarias en una instrucción SELECT. En la siguiente tabla, se enumeran las cláusulas SQL más comunes.</p>
+    <li>SELECT</li>
+    <P>Muestra una lista de los campos que contienen datos de interés.</P>
+    <li>FROM</li>
+    <P>Muestra las tablas que contienen los campos de la cláusula SELECT.</P>
+    <li>WHERE</li>
+    <P>	
+Especifica los criterios de campo que cada registro debe cumplir para poder ser incluido en los resultados.</P>
+    <li>ORDER BY</li>
+    <P>Especifica la forma de ordenar los resultados.</P>
+    <li>HAVING</li>
+    <P>En una instrucción SQL que contiene funciones de agregado, especifica las condiciones que se aplican a los campos que se resumen en la instrucción SELECT.</P>
+    </div>
+    </div>
+    <div>
+   </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Diez, MIPS</h4>
+    </div>
+</div>
+    
+<div data-role="page" id="Pagina11" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Mis datos...</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+<h2>Nombre:María Ignacia Postrero Santos</h2>
+<h2>Grupo: "G" </h2>
+<h2>Semestre: 4to </h2>
+<h2>Submódulo:Desarrolla Aplicaciones Móviles</h2>
+<h2>Nombre del docente: José Antonio Gómez Hernández</h2>
+  
+    </div>
+    </div>
+    <div>
+   </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Diez, MIPS</h4>
+    </div>
+</div>
+  
+</body>
+</html>
